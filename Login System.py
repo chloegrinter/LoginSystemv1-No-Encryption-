@@ -1,6 +1,7 @@
 
 import sys
-
+user = ' '
+passw = ' '
 def usernamestartup():
     print('Input Your Username and Password')
     print('|--------------------------------|')
@@ -23,11 +24,17 @@ def adminverify(username, password):
         else:
             print('Incorrect Username or Password.')
             print('|--------------------------------|')
-            sys.exit()
+            
     else:
         print('Incorrect Username or Password.')
         print('|--------------------------------|')
+       
+for i in range(0,5):
+    if passw == 'supersecurepassword': 
         sys.exit()
-user = usernameinput()
-passw = passwordinput()
-adminverify(user, passw)
+    else:
+        user = usernameinput()
+        passw = passwordinput()
+        adminverify(user, passw)
+
+
